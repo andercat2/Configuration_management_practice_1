@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <username>user</username>
+    <computername>localhost</computername>
+    <zip_path>/home/yaroslav/Документы/Vs_code/Configuration_management_practice_1/test_fs.zip</zip_path>
+    <script_path>startup_script.sh</script_path>
+</configuration>
