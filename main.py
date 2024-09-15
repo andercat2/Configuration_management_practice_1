@@ -4,7 +4,7 @@ from shell_gui import ShellGUI
 
 if __name__ == "__main__":
     # Чтение конфигурационного файла
-    user_name, computer_name, zip_path, script_path = read_config("/home/yaroslav/Документы/Vs_code/Configuration_management_practice_1/config.xml")
+    user_name, computer_name, zip_path, script_path = read_config(r"C:\Users\Vegas\Desktop\Configuration_management_practice_1-main\config.xml")
     
     # Создание виртуальной файловой системы
     vfs = VirtualFileSystem(zip_path)

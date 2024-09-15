@@ -2,6 +2,6 @@
 <configuration>
     <username>user</username>
     <computername>localhost</computername>
-    <zip_path>/home/yaroslav/Документы/Vs_code/Configuration_management_practice_1/test_fs.zip</zip_path>
+    <zip_path>C:/Users/Vegas/Desktop/Configuration_management_practice_1-main/test_fs.zip</zip_path>
     <script_path>startup_script.sh</script_path>
 </configuration>
