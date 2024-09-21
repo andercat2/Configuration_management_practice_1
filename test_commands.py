@@ -1,4 +1,5 @@
 import unittest
+import os
 from virtual_file_system import VirtualFileSystem
 from commands import ls, cd, pwd, cat, wc
 
@@ -14,11 +15,13 @@ class TestShellCommands(unittest.TestCase):
     def test_cd(self):
         # Переход в поддиректорию и проверка текущей директории
         cd(self.vfs, 'documents')
-        self.assertEqual(self.vfs.current_dir, '/home/user/documents/')
+        expected_path = os.path.normpath('home/user/documents/')
+        self.assertEqual(self.vfs.current_dir, expected_path)
 
     def test_pwd(self):
         # Проверка текущей директории
-        self.assertEqual(pwd(self.vfs), '/home/user/')
+        expected_pwd = os.path.normpath('home/user/')
+        self.assertEqual(pwd(self.vfs), expected_pwd)
 
     def test_cat(self):
         # Проверка команды cat
